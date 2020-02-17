@@ -1,0 +1,395 @@
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* 
+    SEM NADA USO EM TAGS
+    # USO EM ID 
+    . USO EM CLASS
+*/
+
+
+#barraMenu{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    background: #272727;
+    height: 100px;
+}
+
+#logotipo{
+    padding-top: 18px;
+    width: 100px;
+    text-align: left;
+    float: left;
+}
+
+#categorias{
+    float: left;
+}
+
+#menu{
+    width: 660px;
+    float: left;
+    padding-top: 13px;
+    font-size: 12px;
+}
+
+
+#menu li{
+    position: relative;
+    float: left;
+}
+
+#menu li a{
+    color: #ffffffcc;
+    padding: 8px;
+    display: block;
+}
+
+#menu li ul{
+    position:absolute; 
+    background: #ffffff; 
+    color: #272727;
+    display:none;   
+}
+
+#menu li ul a{
+    color: #272727;
+    text-align: center;
+}
+
+#menu li:hover ul, #menu li.over ul{display:block;}
+
+#menu li ul li{
+    display:block; 
+    width:150px;
+    }
+    
+
+#busca h3{
+    border-right: 1px solid rgba(255, 255, 255, 0.164);
+    border-left: 1px solid rgba(255, 255, 255, 0.164);
+    width: 90px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 37px;
+    padding-bottom: 34px;
+    font-style: italic;
+    font-size: 11px;
+    color: #ffffffcc;
+    float: left;
+}
+
+#Icones{
+    width: 70px;
+    float: left;
+    margin-left: 15px;
+}
+
+#Icones li{
+    position: relative;
+    float: left;
+}
+
+#Icones li a{
+    margin-top: 15px;
+    padding: 5px;
+    display: block;
+}
+
+#Icones li ul{
+    position:absolute; 
+    background: #ffffffcc; 
+    color: #272727;
+    display:none;   
+}
+
+#Icones li ul a:hover{
+    background:#cccccc; 
+}
+
+#Icones li ul a{
+    margin-top: 0px;
+    padding-top: 15px;
+    color: #272727;
+    font-size: 11px;
+    text-align: center;
+}
+
+#Icones li:hover ul, #Icones li.over ul{
+    display:block;
+}
+
+#Icones li ul li{
+    display:block; 
+    width:180px;
+    }
+
+#sacola{
+    background: #ff5959;
+    width: 65px;
+    float: left;
+    margin-left: 15px;
+}
+
+#sacola a{
+    display: inline-block;
+    margin: 35px 20px 40px 5px;
+}
+
+#bannerf{
+    margin-top: 100px;
+    width: 100%;
+    height: 385px;
+}
+
+
+#bannerRegua{
+    float: left;
+    text-align: center;
+}
+
+#regua{
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 277px;
+}
+
+#reguaCarrousel{
+    float: left;
+    width: 80%;
+    height: 100%;
+    border: 1px solid #c4c4c4cc ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+#minibannerCarrousel{
+    float: left;
+    height: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-control-prev{
+    background: #0000001e;
+}
+
+.carousel-control-next{
+    background: #0000001e;
+}
+
+#miniBanners{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#mbanner{
+    float: left;
+    width: 100%;
+    margin-left: auto;
+}
+
+#chamada{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#chamadas{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #797979;
+    float: left;
+}
+
+#carrousel{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+#carrousel :hover{
+    text-decoration: none;
+}
+
+#carrousel h2{
+    font-size: 14px;
+    color: black;
+}
+
+#carrousel h3{
+    font-size: 14px;
+    color: #8d8d8d;
+    text-decoration: line-through;
+}
+#carrousel h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+#carrousel h5{
+    font-size: 12px;
+    color: black;
+}
+
+#vitrine{
+    float: left;
+}
+
+
+#newsletter{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+
+#fique{
+    float: left;
+    text-align: right;
+    padding-top: 15px;
+}
+
+#fique h2{
+    font-size: 25px;
+}
+
+#fique h3{
+    font-size: 18px;
+}
+
+#cadastre{
+    float: left;
+    font-size: 14px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+#news{
+    float: left;
+}
+
+#email {
+    margin-top: 22px;
+    border: 2px solid gray;
+    height: 50px;
+}
+#txtMail {
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 5px;
+    width:180px;
+    height: 40px;
+    font-size: 13px;
+    font-style: italic;
+    border: none;
+    float:left;
+}
+#btnOk {
+    background: gray;
+    position:relative;
+    color:#FFF; 
+    margin-right:0 auto;
+    padding:15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border:0 none;
+    font-size:11px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+#siganos{
+    float: left;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+#rodape{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#rodape h3{
+    font-size: 15px;
+    text-align: left;
+    color: #2727278e;
+}
+
+#rodape nav{
+    text-align: left;
+}
+
+#rodape nav ul li a{
+    color: #272727cb;
+    font-size: 12px;
+}
+
+#institucional{
+    float: left;
+    width: 140px;
+
+}
+
+#duvidas{
+    float: left;
+    width: 130px;
+}
+
+#atendimento{
+    float: left;
+    width: 200px;
+
+}
+
+#links ul li{
+    padding-top: 5px;
+}
+
+#cliqueAq{
+    font-weight: bold;
+}
+
+#pagamento{
+    float: left;
+    width: 350px;
+}
+
+
+#facebook{
+    float: right;
+    width: 500px;
+    text-align: left;
+}
+
+#copyright{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#copy{
+    float: left;
+    font-size: 13px;
+    color: gray;
+    padding-top: 10px;
+}
