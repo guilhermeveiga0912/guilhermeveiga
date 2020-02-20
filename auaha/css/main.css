@@ -8,12 +8,6 @@
     font-family: 'Barlow', sans-serif;
 }
 
-/* 
-    SEM NADA USO EM TAGS
-    # USO EM ID 
-    . USO EM CLASS
-*/
-
 
 #barraMenu{
     position: fixed;
@@ -145,6 +139,144 @@
     margin: 35px 20px 40px 5px;
 }
 
+/*CSS MENU MOBILE*/
+
+#barraMenuMob{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    background: #272727;
+    height: 100px;
+}
+
+.btnMenuHamburger{
+    color: #ffff;
+    font-size: 35px;
+    float: left;
+    margin-top: 25px;
+}
+
+#logotipoMob{
+    padding-top: 18px;
+    width: 100px;
+    text-align: left;
+    float: left;
+}
+
+#categoriasMob{
+    float: left;
+}
+
+#menuMob{
+    width: 250px;
+    float: left;
+    background: #272727;
+    padding-top: 13px;
+    font-size: 12px;
+    left: -250px;
+    position: absolute;
+    transition: all 500ms ease;
+}
+
+.openMenu{
+    left: 0 !important;
+}
+
+#menuMob ul li{
+    list-style: none;
+}
+
+
+#menuMob li{
+    position: relative;
+}
+
+#menuMob li a{
+    color: #ffffffcc;
+    padding: 3px;
+    display: block;
+    font-size: 15px;
+}
+
+#menuMob li ul{
+    position:absolute; 
+    background: #ffffff; 
+    color: #272727;
+    display:none;
+    margin-left: 170px;
+    float: right;
+}
+
+#menuMob li ul a{
+    color: #272727;
+    text-align: center;
+}
+
+#menuMob li:hover ul, #menuMob li.over ul{display:block;}
+
+#menuMob li ul li{
+    display:block; 
+    width:150px;
+    }
+    
+
+#buscaMob h3{
+    width: 200px;
+    text-align: center;
+    font-style: italic;
+    border: 1px #ffffffcc solid;
+    font-size: 11px;
+    color: #ffffffcc;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+#atendMob{
+    width: 110px;
+    margin-left: 70px;
+}
+
+#atendMob li{
+    position: relative;
+    float: center;
+}
+
+#atendMob li a{
+    margin-top: 10px;
+    padding: 2px;
+    display: block;
+}
+
+@media(min-width:992px){
+    #menuMob{
+        background: none;
+        position: unset;
+        border-right: none;
+        }
+
+    #menuMob ul{
+        display: flex;
+    }
+
+    #menuMob ul li{
+        flex-grow: 1;
+    }
+
+    #menuMob a{
+        color: #fff;
+    }
+
+    #menuMob a:hover {
+        background: #f75568;
+        border-radius: 5px;
+    }
+}
+
+/*BODY*/
 #bannerf{
     margin-top: 100px;
     width: 100%;
@@ -168,12 +300,11 @@
     float: left;
     width: 80%;
     height: 100%;
-    border: 1px solid #c4c4c4cc ;
+    border: 1px solid #c4c4c46b ;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 100px;
+    margin-top: -200px;
 }
 
 #minibannerCarrousel{
@@ -182,14 +313,15 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -8px;
 }
 
 .carousel-control-prev{
-    background: #0000001e;
+    background: #0000001a;
 }
 
 .carousel-control-next{
-    background: #0000001e;
+    background: #0000001a;
 }
 
 #miniBanners{
@@ -254,11 +386,34 @@
     float: left;
 }
 
+#vitrineMaisVendidos{
+    float: left;
+    height: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#vitrinePromocoes{
+    float: left;
+    height: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#vitrineNovidades{
+    float: left;
+    height: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #newsletter{
     width: 100%;
     float: left;
-    text-align: center;
 }
 
 
@@ -323,10 +478,80 @@
     font-size: 14px;
 }
 
+#newsletterMob{
+    width: 100%;
+    float: left;
+}
+
+
+#fiqueMob{
+    float: left;
+    text-align: right;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#fiqueMob h2{
+    font-size: 25px;
+}
+
+#fiqueMob h3{
+    font-size: 18px;
+}
+
+#cadastreMob{
+    float: left;
+    font-size: 14px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#newsMob{
+    float: left;
+    margin-left: 55px;
+}
+
+#emailMob {
+    margin-top: 22px;
+    border: 2px solid gray;
+    height: 50px;
+    width: 200px;
+}
+
+#txtMailMob {
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 20px;
+    height: 40px;
+    font-size: 13px;
+    font-style: italic;
+    border: none;
+    float:left;
+}
+#btnOkMob {
+    background: gray;
+    position:relative;
+    color:#FFF; 
+    margin-right:0 auto;
+    padding:15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border:0 none;
+    font-size:11px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+#siganosMob{
+    float: left;
+    padding-top: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
 #rodape{
     width: 100%;
     float: left;
-    text-align: center;
 }
 
 #rodape h3{
@@ -358,7 +583,6 @@
 #atendimento{
     float: left;
     width: 200px;
-
 }
 
 #links ul li{
@@ -371,14 +595,22 @@
 
 #pagamento{
     float: left;
-    width: 350px;
 }
-
 
 #facebook{
     float: right;
     width: 500px;
     text-align: left;
+}
+
+
+#pagamentoMob{
+    float: left;
+    margin-bottom: 20px;
+}
+
+#facebookMob{
+    float: left;
 }
 
 #copyright{
